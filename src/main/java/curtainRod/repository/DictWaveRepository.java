@@ -11,7 +11,6 @@ import java.util.Optional;
 @Repository
 public interface DictWaveRepository extends JpaRepository<DictWave,Integer> {
 
-    //List<DictWave> findById(DictSizeSystem dictSizeSystem);
     List<DictWave> findByDictSizeSystem(Optional<DictSizeSystem> dictSizeSystem);
     Optional<DictWave> findById(Integer Id);
 

@@ -93,12 +93,7 @@ public class PriceService {
             //curtainPrices.add(pair); // dodanie pary do listy wynikowej
             CurtainData curtainData = new CurtainData(room, curtainLength, finalPrice, longcurtainId);
             curtainDataList.add(curtainData);
-/*
-            System.out.println("pierwszy wskaźnik " + ratioWave1);
-            System.out.println("wskaźnik pierwszy do potegi " + Math.pow(ratioWave1, getPowerOfRatioWave(curtainLength)));
-            System.out.println("wskaźnik " + ratioWave);
 
- */
 
         }
         curtainDataList.add(new CurtainData(sumFinalPrice));

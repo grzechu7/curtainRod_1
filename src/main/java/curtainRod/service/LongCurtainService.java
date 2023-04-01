@@ -85,20 +85,4 @@ private final DictMoveToRepository dictMoveToRepository;
 }
 
 
-/*
-    public Customer getWafeUser(){
-        return customerWriteModel.toProject();
-    }
 
-    public void getNumberWave(){
-        List<Longcurtain> waveToList = (List<Longcurtain>) getWafeUser();
-
-        for (Longcurtain waveTo : waveToList) {
-            Integer waveInt = waveTo.getWave();
-
-            System.out.println(waveInt);
-        }
-
-    }
-
- */

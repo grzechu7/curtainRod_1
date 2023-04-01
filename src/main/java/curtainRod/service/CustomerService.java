@@ -24,14 +24,8 @@ public class CustomerService {
         return repository.findAll();
 
     }
-    /*
-    public Customer getHighestClientId(CustomerFirstRepository repository){
-        return repository.findTopByOrderByIdDesc();
-    }
 
-     */
 
-    //tworzymy nowe projekty
     public Customer save(final CustomerWriteModel toSave){
 
         return repository.save(toSave.toProject());
@@ -51,7 +45,7 @@ public class CustomerService {
         if (clientId != null) {
             return clientId.getId();
         } else {
-            return 0; // lub inna wartość początkowa
+            return 0;
         }
     }
 

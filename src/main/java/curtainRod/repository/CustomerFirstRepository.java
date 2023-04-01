@@ -17,7 +17,7 @@ public interface CustomerFirstRepository {
 
     Customer save(Customer entity);
 
-    //boolean existsByDoneIsFalseAndProject_Id(Integer projectId);
+
 
 
 }

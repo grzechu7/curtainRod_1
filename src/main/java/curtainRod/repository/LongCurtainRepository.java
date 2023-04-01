@@ -12,6 +12,4 @@ public interface LongCurtainRepository extends LongCurtainFirstRepository, JpaRe
     Longcurtain findByCustomerId(Integer customerId); //zwraca tylko jeden rekord dla danego customerId
     Integer findByCustomerIdAndLengthCurtainRod(Integer customerId, Integer getLengthCurtainRod);
 
-    //Longcurtain findByWaveAndFirstByCustomerId(Integer wave, Integer customerId); //zwraca rekord dla wybranego przez użytkownika rodzaju falowania
-
 }

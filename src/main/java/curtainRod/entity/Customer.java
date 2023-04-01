@@ -23,8 +23,6 @@ public class Customer {
     private String phone;
 
    @OneToMany(cascade = CascadeType.ALL,mappedBy = "customer")
-   // @OneToMany(targetEntity = Longcurtain.class,cascade = CascadeType.ALL)
-    //@JoinColumn(name ="customer_id",referencedColumnName = "id")
     private Set<Longcurtain> steps;
 
 
