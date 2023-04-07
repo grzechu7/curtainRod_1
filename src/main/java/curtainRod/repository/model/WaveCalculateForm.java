@@ -52,7 +52,7 @@ public class WaveCalculateForm {
 
 
     public void setSizesystemIdForSteps(CustomerWriteModel customerWriteModel) {
-        Customer customer = customerWriteModel.toProject();
+        Customer customer = customerWriteModel.toLongurtain();
         Set<Longcurtain> steps = customer.getSteps();
         for (Longcurtain step : steps) {
             Integer waveValue = step.getWave();
@@ -68,7 +68,7 @@ public class WaveCalculateForm {
 
     public void printSizesystemIdForSteps(CustomerWriteModel current) {
         setSizesystemIdForSteps(current);
-        for (Longcurtain step : current.toProject().getSteps()) {
+        for (Longcurtain step : current.toLongurtain().getSteps()) {
             System.out.println("sizesystem_id for step " + step.getId() + " is " + step.getSizesystem_id().getId());
         }
     }

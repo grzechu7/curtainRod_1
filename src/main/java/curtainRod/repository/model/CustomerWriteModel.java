@@ -1,17 +1,16 @@
 package curtainRod.repository.model;
 
 import curtainRod.entity.Customer;
-import curtainRod.entity.DictWave;
+
 import curtainRod.entity.Longcurtain;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
+
 
 
 public class CustomerWriteModel {
@@ -64,7 +63,7 @@ public class CustomerWriteModel {
         this.steps = steps;
     }
 
-    public Customer toProject(){
+    public Customer toLongurtain(){
         var result = new Customer();
         result.setPlace(place);
         result.setEmail(email);

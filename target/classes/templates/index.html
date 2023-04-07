@@ -17,7 +17,7 @@
             <h2 class = "text-center" th:if="${message != null}" th:text="${message}"> wypełnij brakujące pole</h2>
             <div class = "card-body" >
                 <!--/*@thymesVar id="customer" type="curtainRod.entity.Customer"*/-->
-                <form action="#" method="POST" th:action="@{/}" th:object="${customer}">
+                <form  method="POST" th:action="@{/}" th:object="${customer}">
                     <p class="C(red)" th:if="${#fields.hasAnyErrors()}" th:errors="*{all}"></p>
                     <div class ="form-group">
                         <label> Lokalizacja instalacji: </label>
@@ -30,6 +30,12 @@
                         <input type="hidden"
                                id="clientId"
                                name="clientId" th:value="${session.clientId != null ? session.clientId : 1}">
+                        <!--<input type="hidden"
+                               id="clientId"
+                               name="clientId"
+                               th:value="${clientId}"
+
+                        />-->
 
                         <input
                                 type = "text"
@@ -125,12 +131,12 @@
                                 </div>
                             </fieldset>
                             <div>
-                                <button type="submit" name="addStep" class = "btn btn-primary" style="margin: 5px 0 5px 0">+</button>
+                                <button type="submit" name="addStep" class = "btn btn-primary" style="margin: 5px 0 5px 0" th:formaction="@{/addStep}">+</button>
                             </div>
                         </div>
 
                         <div class = "box-footer">
-                            <button type="submit" class = "btn btn-primary" >Zapisz</button>
+                            <button type="submit" class = "btn btn-primary" th:formaction="@{/curtainRoads}">Zapisz</button>
                             <button type="reset" class = "btn btn-primary">Wyczyść</button>
                         </div>
                     </div>

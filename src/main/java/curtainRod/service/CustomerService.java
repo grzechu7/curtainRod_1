@@ -19,7 +19,7 @@ public class CustomerService {
     }
 
 
-    //odczytujemy projekty
+    //odczytujemy klientów
     public List<Customer> readAll(){
         return repository.findAll();
 
@@ -28,7 +28,7 @@ public class CustomerService {
 
     public Customer save(final CustomerWriteModel toSave){
 
-        return repository.save(toSave.toProject());
+        return repository.save(toSave.toLongurtain());
     }
 
     public CustomerFirstRepository getRepository() {

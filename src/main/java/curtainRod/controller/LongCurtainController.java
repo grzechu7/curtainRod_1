@@ -48,9 +48,9 @@ public class LongCurtainController {
                            Model model) {
         try {
             // Pobranie id klienta z sesji
-            String clientIdString = (String) session.getAttribute("clientId");
-            Integer clientId = Integer.parseInt(clientIdString);
-
+            //String clientIdString = (String) session.getAttribute("clientId");
+            //Integer clientId = Integer.parseInt(clientIdString);
+            Integer clientId = (Integer) session.getAttribute("clientId");
             List<Map<String, Object>> sizeWal = sizeSystemService.getWavesByCustomerId(clientId);
 
             model.addAttribute("sizeWal", sizeWal);

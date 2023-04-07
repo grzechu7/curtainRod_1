@@ -28,8 +28,7 @@ public class PriceController {
                            Model model) {
         try {
             // Pobranie id klienta z sesji
-            String clientIdString = (String) session.getAttribute("clientId");
-            Integer clientId = Integer.parseInt(clientIdString);
+            Integer clientId = (Integer) session.getAttribute("clientId");
             List<CurtainData> curtainPrices = priceService.calculateCurtainPrice(clientId);
 
             model.addAttribute("curtainPrice", curtainPrices);
