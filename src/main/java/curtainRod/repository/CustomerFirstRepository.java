@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 @Repository
-public interface CustomerFirstRepository {
+public interface CustomerFirstRepository extends CustomerRepository{
 
     List<Customer> findAll();
     Optional<Customer> findById(Integer id);// bedzie zwracać pojedynczy taskGroup i wspiera lazy loading
