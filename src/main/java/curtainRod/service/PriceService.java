@@ -2,6 +2,7 @@ package curtainRod.service;
 
 import curtainRod.entity.Longcurtain;
 import curtainRod.entity.Prices;
+import curtainRod.repository.LongCurtainFirstRepository;
 import curtainRod.repository.model.CurtainData;
 import curtainRod.repository.DictWaveRepository;
 import curtainRod.repository.LongCurtainRepository;
@@ -20,9 +21,9 @@ public class PriceService {
     @Autowired
     private final DictWaveRepository dictWaveRepository;
     @Autowired
-    private final LongCurtainRepository longCurtainRepository;
+    private final LongCurtainFirstRepository longCurtainRepository;
 
-    public PriceService(PricesRepository pricesRepository, DictWaveRepository dictWaveRepository, LongCurtainRepository longCurtainRepository) {
+    public PriceService(PricesRepository pricesRepository, DictWaveRepository dictWaveRepository, LongCurtainFirstRepository longCurtainRepository) {
         this.pricesRepository = pricesRepository;
         this.dictWaveRepository = dictWaveRepository;
         this.longCurtainRepository = longCurtainRepository;

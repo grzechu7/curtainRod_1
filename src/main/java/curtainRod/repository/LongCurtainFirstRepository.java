@@ -5,7 +5,7 @@ import curtainRod.entity.Longcurtain;
 
 import java.util.List;
 
-public interface LongCurtainFirstRepository {
+public interface LongCurtainFirstRepository extends LongCurtainRepository {
 
     Longcurtain getCurtainById(Integer id);
     List<Longcurtain> findAll();
